@@ -1,0 +1,306 @@
+{
+    "meta": {
+        "__export_time": 1658038690406,
+        "__export_app": "firecamp_v2.7.1 ",
+        "__export_version": 1
+    },
+    "project": {
+        "name": "NodeJS_Stater",
+        "description": "",
+        "auth": {},
+        "scripts": {
+            "pre": "",
+            "post": "",
+            "test": ""
+        },
+        "meta": {
+            "active_auth": "no_auth"
+        }
+    },
+    "modules": [
+        {
+            "meta": {
+                "active_auth": "inherit",
+                "inherit_script": {
+                    "pre": true,
+                    "post": true,
+                    "test": true
+                }
+            },
+            "name": "User Manage",
+            "auth": {
+                "inherit": {}
+            },
+            "scripts": {
+                "pre": "",
+                "post": "",
+                "test": ""
+            },
+            "requests": [
+                {
+                    "meta": {
+                        "name": "Add User",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0",
+                        "inherit_script": {
+                            "pre": true,
+                            "post": true,
+                            "test": true
+                        }
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/user/register",
+                        "auth": "",
+                        "host": "127.0.0.1:3000",
+                        "port": "3000",
+                        "hostname": "127.0.0.1",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://127.0.0.1:3000",
+                        "href": "http://127.0.0.1:3000/user/register",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "application/json",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\n    \"name\" : \"Mg Mg\",\n    \"passwd\": \"123123123\",\n    \"phone\": \"09600600600\",\n    \"email\": \"mgmg@gmail.com\"\n}",
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Edit User",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0",
+                        "inherit_script": {
+                            "pre": true,
+                            "post": true,
+                            "test": true
+                        }
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/user/1",
+                        "auth": "",
+                        "host": "127.0.0.1:3000",
+                        "port": "3000",
+                        "hostname": "127.0.0.1",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://127.0.0.1:3000",
+                        "href": "http://127.0.0.1:3000/user/1",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "PATCH",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "Delete User",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0",
+                        "inherit_script": {
+                            "pre": true,
+                            "post": true,
+                            "test": true
+                        }
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/user/1",
+                        "auth": "",
+                        "host": "127.0.0.1:3000",
+                        "port": "3000",
+                        "hostname": "127.0.0.1",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://127.0.0.1:3000",
+                        "href": "http://127.0.0.1:3000/user/1",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "DELETE",
+                    "headers": [],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "noBody",
+                                "is_default": true
+                            },
+                            "body": {}
+                        }
+                    ]
+                },
+                {
+                    "meta": {
+                        "name": "User Login",
+                        "description": "",
+                        "active_auth": "inherit",
+                        "type": "api",
+                        "version": "1.0",
+                        "inherit_script": {
+                            "pre": true,
+                            "post": true,
+                            "test": true
+                        }
+                    },
+                    "url": {
+                        "slashes": true,
+                        "protocol": "http:",
+                        "hash": "",
+                        "pathname": "/user/login",
+                        "auth": "",
+                        "host": "127.0.0.1:3000",
+                        "port": "3000",
+                        "hostname": "127.0.0.1",
+                        "password": "",
+                        "username": "",
+                        "origin": "http://127.0.0.1:3000",
+                        "href": "http://127.0.0.1:3000/user/login",
+                        "query_params": [],
+                        "path_params": []
+                    },
+                    "method": "POST",
+                    "headers": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json",
+                            "type": "text",
+                            "disable": false
+                        }
+                    ],
+                    "config": {
+                        "ORIGIN": "",
+                        "USERAGENT": "",
+                        "TIMEOUT_MS": 0,
+                        "REJECT_UNAUTHORIZED": false,
+                        "FOLLOWLOCATION": true,
+                        "MAXREDIRS": -1,
+                        "HTTP_VERSION": "V2Tls"
+                    },
+                    "scripts": {
+                        "pre": "",
+                        "post": "",
+                        "test": ""
+                    },
+                    "bodies": [
+                        {
+                            "name": "Default",
+                            "meta": {
+                                "active_body_type": "application/json",
+                                "is_default": true
+                            },
+                            "body": {
+                                "application/json": {
+                                    "value": "{\n    \"phone\": \"09600600600\",\n    \"passwd\":\"123123123\"\n}",
+                                    "headers": []
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "requests": [],
+    "environments": [
+        {
+            "name": "Production",
+            "variables": {
+                "variable_name": "variable_value"
+            }
+        },
+        {
+            "name": "Development",
+            "variables": {
+                "variable_name": "variable_value"
+            }
+        }
+    ]
+}
