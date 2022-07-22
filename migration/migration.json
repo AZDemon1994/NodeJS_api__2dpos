@@ -1,0 +1,35 @@
+{
+    "users": [
+        {
+            "name": "Owner",
+            "email": "owner@gmail.com",
+            "phone": "09100100100",
+            "passwd": "123123123"
+        }
+    ],
+    "roles": [
+        {
+            "name": "Admin"
+        },
+        {
+            "name": "Bookie"
+        },
+        {
+            "name": "Agent"
+        },
+        {
+            "name": "Commissioner"
+        },
+        {
+            "name": "User"
+        }
+    ],
+    "permits": [
+        {
+            "name": "Manage_Admin"
+        },
+        {
+            "name": "Manage_Agent"
+        }
+    ]
+}

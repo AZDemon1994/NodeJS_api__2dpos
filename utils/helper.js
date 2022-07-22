@@ -13,6 +13,6 @@ const fMsg = async (res, msg = "Success", result = []) => {
 module.exports = {
     encodePass: (passwd) => bcrypt.hashSync(passwd),
     comparePass: (plain, hash) => bcrypt.compareSync(plain, hash),
-    makeToken: payload => jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: "24h" }),
+    makeToken: payload => jwt.sign(payload, process.env.SECRET_KEY, { expiresIn: "1h" }),
     fMsg,
 }
